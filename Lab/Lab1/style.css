@@ -1,0 +1,31 @@
+
+h1{
+    text-align: center;
+}
+.img{
+    display: flex;
+}
+.video{
+    display: flex;
+    gap: 520px;
+    margin-top: 0cm;
+
+}
+audio{
+    margin-top: 2opx;
+}
+h3{
+    text-align: justify;
+}
+img{
+    margin: 40px;
+}
+video{
+    align-self: justify;
+    text-align: center;
+    position: relative;
+}
+article{
+    background-color: rgb(66, 212, 91);
+
+}
