@@ -20,3 +20,9 @@ sample of a button in css<br/>
 .btn:active{   &nbsp;  &nbsp; &nbsp;            //performs certain action on click<br/>
     background-color: #67d2b6;  &nbsp; &nbsp;   //changes color on click<br/>
 }<br/>
+## Pseudo-class <br/>
+A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). For example, :hover can be used to change a button's color when the user's pointer hovers over it.<br/>
+## Border<br/>
+The border shorthand CSS property sets an element's border. It sets the values of border-width, border-style, and border-color.<br/>
+## Font<br/>
+The font CSS shorthand property sets all the different properties of an element's font. Alternatively, it sets an element's font to a system font.
