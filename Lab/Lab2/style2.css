@@ -1,0 +1,80 @@
+.btn1{
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+section{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(-10%, -10%);
+    
+}
+.dotted {
+    display: inline-block;
+    border: 5px dotted black;
+    padding: 15px 60px ;
+    margin: 25px;
+}
+
+.solid {
+    display: inline-block;
+    border: 5px solid black;
+    padding: 15px 61px ;
+    margin: 25px;
+}
+
+.groove {
+    display: inline-block;
+    border: 5px groove #ded2d2e0;
+    padding: 15px 60px ;
+    margin: 25px;
+}
+.inset{
+    display: inline-block;
+    border: 5px inset #ded2d2e0;
+    padding: 15px 61px ;
+    margin: 25px;
+}
+
+.none {
+    display: inline-block;
+    border: 5px none #ded2d2e0;
+    padding: 15px 61px ;
+    margin: 25px;
+}
+
+.dashed {
+    display: inline-block;
+    border: 5px dashed black;
+    padding: 15px 60px ;
+    margin: 25px;
+}
+
+.double {
+    display: inline-block;
+    border: 5px double black;
+    padding: 15px 60px ;
+    margin: 25px;
+}
+
+.ridge {
+    display: inline-block;
+    border: 5px ridge #ded2d2e0;;
+    padding: 15px 61px ;
+    margin: 25px;
+}
+
+.outset {
+    display: inline-block;
+    border: 5px outset #ded2d2e0;
+    padding: 15px 60px ;
+    margin: 25px;
+}
+
+.hidden {
+    display: inline-block;
+    border: 5px hidden #ded2d2e0;
+    padding: 15px 60px ;
+    margin: 25px;
+}
