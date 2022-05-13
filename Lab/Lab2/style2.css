@@ -1,80 +1,60 @@
-.btn1{
-    display: inline-block;
-    margin-bottom: 40px;
-}
-
 section{
+    grid-template-columns: 80px 80px;
+   
+}
+a{
+    margin: 20px;
+}
+.buttons{
     position: absolute;
-    top: 10%;
-    left: 10%;
-    transform: translate(-10%, -10%);
+    top: 10px;
+    left: 20px;
+    transform: translate(10%, 10%);
     
 }
-.dotted {
+.btn{
+    height: 2.5rem;
+    width: 9rem;
+    border-radius: 0.25rem;
     display: inline-block;
-    border: 5px dotted black;
-    padding: 15px 60px ;
-    margin: 25px;
+    padding-top: 15px;
+    text-align: center;
+}
+.dotted {
+    border: 5px dotted black
 }
 
 .solid {
-    display: inline-block;
     border: 5px solid black;
-    padding: 15px 61px ;
-    margin: 25px;
 }
 
 .groove {
-    display: inline-block;
     border: 5px groove #ded2d2e0;
-    padding: 15px 60px ;
-    margin: 25px;
 }
 .inset{
-    display: inline-block;
     border: 5px inset #ded2d2e0;
-    padding: 15px 61px ;
-    margin: 25px;
 }
 
 .none {
-    display: inline-block;
     border: 5px none #ded2d2e0;
-    padding: 15px 61px ;
-    margin: 25px;
 }
 
 .dashed {
-    display: inline-block;
     border: 5px dashed black;
-    padding: 15px 60px ;
-    margin: 25px;
 }
 
 .double {
-    display: inline-block;
     border: 5px double black;
-    padding: 15px 60px ;
-    margin: 25px;
 }
 
 .ridge {
-    display: inline-block;
     border: 5px ridge #ded2d2e0;;
-    padding: 15px 61px ;
-    margin: 25px;
 }
 
 .outset {
-    display: inline-block;
     border: 5px outset #ded2d2e0;
-    padding: 15px 60px ;
-    margin: 25px;
 }
 
 .hidden {
-    display: inline-block;
     border: 5px hidden #ded2d2e0;
-    padding: 15px 60px ;
-    margin: 25px;
 }
