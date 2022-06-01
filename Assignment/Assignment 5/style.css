@@ -109,6 +109,9 @@ a:hover{
     width: 300px;
     border-radius: 50%;
     border: solid 5px;
+    margin-left: 60px;
+    margin: auto;
+    box-shadow: 0 1px 10px -1px rgb(0 0 0 / 40%);
     border-color: white;
    
 
@@ -128,23 +131,35 @@ a:hover{
     position: relative;
     font-size: 32px;
     width: 100%;
+    
 
 }
 .btn1{
     vertical-align: middle;
     padding:10px 0 10px 0;
     float: left;
+    margin-left: -20px;
     width: 50%;
+    font-size: 20px;
     position: absolute;
+    border: none;
+    background-color: #5336e4;
+    border-radius: 5px;
+    color: white;
 
 }
 .btn2{
     vertical-align: middle;
     padding:10px 0 10px 0;
-    float: right;
+    font-size: 20px;
+    margin-right: -20px;
     left: 50%;
     width: 50%;
     position: absolute;
+    border:none;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
 
 }
 
