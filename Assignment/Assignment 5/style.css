@@ -6,6 +6,10 @@ html {
     max-width: 100%;
     overflow-x: hidden;
 }
+body{
+    background-image: url("bc.jpg");
+
+}
 /* /////////////////////////////////MENU BAR///////////////////////////// */
 main{
     margin: 0px;
@@ -14,7 +18,8 @@ main{
     width: 100%;
     padding:10px 0 0 0px;
     box-shadow: 0 1px 10px -1px rgb(0 0 0 / 40%);
-    background-color: rgb(239, 234, 234);
+    background-color: #bae6fd;
+   
 }
 .logo{
     position: absolute;  
@@ -80,11 +85,14 @@ a:hover{
     right: 20px;
     margin-top: 0px;
 }
+.txt2{
+    margin-top: 100px;
+}
 /* /////////////////////////////////HOME//////////////////////////////// */
 #home{
     width: 100%;
     margin-top: 50px;
-    height: 650px;
+    height: 610px;
 }
 .profile{
     height: 300px;
@@ -100,6 +108,8 @@ a:hover{
     height: 300px;
     width: 300px;
     border-radius: 50%;
+    border: solid 5px;
+    border-color: white;
    
 
 }
@@ -113,21 +123,43 @@ a:hover{
     width: 100%;
     text-align: center;
 }
-button{
-    padding: 10px 20px;
-    left: 0;
-    right: 0;
-    position: absolute;
-    font-size: 16px;
+.btn{
+    display: inline-block;
+    position: relative;
+    font-size: 32px;
+    width: 100%;
+
 }
+.btn1{
+    vertical-align: middle;
+    padding:10px 0 10px 0;
+    float: left;
+    width: 50%;
+    position: absolute;
+
+}
+.btn2{
+    vertical-align: middle;
+    padding:10px 0 10px 0;
+    float: right;
+    left: 50%;
+    width: 50%;
+    position: absolute;
+
+}
+
 
 /* /////////////////////////////PROJECT SECTION////////////////////////// */
 
 #projects{
-    border-top: 1px solid;
+    /* border-top: 1px solid; */
+    background-color: #0284c7
+    ;
 }
 .box{
-    margin-top: 140px;
+    margin-top: 180px;
+    height: 600px;
+    width: 100%;
   
 }
 .box1{
@@ -142,7 +174,7 @@ button{
     width: 30%;
     height: 30%;
     float: left;
-    left: 35%;
+    left: 2%;
     position: relative;
 }
 .box3{
@@ -162,6 +194,9 @@ button{
 }
 .margin-top{
     margin-top: 30px;
+}
+.txt4{
+    padding-top: 50px;
 }
 .txt3{
     position: absolute;
@@ -200,7 +235,7 @@ input[type=submit] {
     padding: 10px;
     width: 100%;
     height: 600px;
-    top: 1500px;
+    top: 1450px;
     position: absolute;
 }
 
