@@ -1,4 +1,3 @@
 ## Assignment 5
 [Click here to view my website](https://niteshrajbaral.github.io/wt-lab-assignment/Assignment/Assignment%205/)
-![Screenshot 2022-06-01 075530](https://user-images.githubusercontent.com/81466207/171381003-80918b44-ae93-47e8-aa7f-c4a95a1f9162.jpg)
-
+![Screenshot 2022-06-01 164428](https://user-images.githubusercontent.com/81466207/171389528-31e34990-57f4-4871-8285-d4150457dcf2.jpg)
