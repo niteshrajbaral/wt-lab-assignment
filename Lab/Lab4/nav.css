@@ -2,7 +2,7 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0px;
 }
-.main{
+main{
     margin: 0px;
     position: relative;
     height: 50px;
@@ -26,7 +26,7 @@
     position: absolute;
     left: 75px;
 }
-.nav{
+nav{
     position: absolute;
     width: 50%;
     left: 230px;
