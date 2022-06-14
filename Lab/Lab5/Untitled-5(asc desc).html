@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+    let array1=[],string;
+    array1=prompt("Enter 4 number");
+    a=array1.split("")
+    string=prompt("Enter asc or desc");
+    let swap;
+    if (string=="asc"){
+        for(let i=0;i<=string.length;i++){
+            for(let j=j+1;j<=string.length-1;j++){
+                if (a[i]>a[j]){
+                    swap=a[i];
+                    a[i]=a[j];
+                    a[j]=swap;
+                }
+            }
+        } 
+        console.log(a);    
+    }else{
+        for(let i=0;i<=string.length;i++){
+            for(let j=i+1;j<=string.length-1;j++){
+                if (a[i]<a[j]){
+                    swap=a[i];
+                    a[i]=a[j];
+                    a[j]=swap;
+                }
+            }
+        } 
+        console.log(a);
+    }
+</script>
+</html>
