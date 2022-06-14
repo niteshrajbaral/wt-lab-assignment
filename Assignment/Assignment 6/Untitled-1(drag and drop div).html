@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div1">ringer</div>
+    <div class="div2">ringer</div>
+    <div class="div3">rose</div>
+    <style>
+      
+        div{
+            height: 80px;
+            width: 160px;
+            margin: 10px;
+            display:inline-block;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 32px;
+            border: 2px solid;
+            padding: 10px;
+        }
+        .div1{
+            background-color: red;
+            position: absolute;
+        }
+        .div2{
+            background-color: yellow;
+            left: 20%;
+            position: absolute;
+        }
+        .div3{
+            background-color: blue;
+            left: 40%;
+            position: absolute;
+        }
+        .div1.active{
+            cursor: move;
+            user-select: none;
+        }
+        .div2.active{
+            cursor: move;
+            user-select: none;
+        }
+        .div3.active{
+            cursor: move;
+            user-select: none;
+        }
+    </style>
+    <script>
+        const div1 = document.querySelector(".div1");
+        const div2 = document.querySelector(".div2");
+        const div3 = document.querySelector(".div3");
+    
+        // ////////////   FOR DIV1  //////////////////
+        function onDrag({movementX, movementY}){
+          let getStyle = window.getComputedStyle(div1);
+          let leftVal = parseInt(getStyle.left);
+          let topVal = parseInt(getStyle.top);
+          
+          div1.style.left = `${leftVal + movementX}px`;
+          div1.style.top = `${topVal + movementY}px`;
+        }
+        
+        div1.addEventListener("mousedown", ()=>{
+          div1.classList.add("active");
+          div1.addEventListener("mousemove", onDrag);
+        });
+
+        document.addEventListener("mouseup", ()=>{
+          div1.classList.remove("active");
+          div1.removeEventListener("mousemove", onDrag);
+        });
+
+       
+
+    </script>
+</body>
+</html>
