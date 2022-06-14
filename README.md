@@ -1,3 +1,5 @@
-# JavaScript Practice
 
-[click here to view my practice](https://github.com/niteshrajbaral/git-practice/tree/main/JavaScript/Practice)
+## Assignment 6 : Deadline 14<sup>th</sup> June
+
+[click here to view Assignment 6](https://github.com/niteshrajbaral/wt-lab-assignment/tree/master/Assignment/Assignment%206)
+
