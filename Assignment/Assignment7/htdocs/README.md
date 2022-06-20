@@ -12,4 +12,3 @@ It’s fast, reliable, and secure. And Apache can be highly customized to meet t
 ### Virtual Host
 An Apache web server can host multiple websites on the SAME server. You do not need separate server machine and apache software for each website. This can achieved using the concept of Virtual Host or VHost.
 Any domain that you want to host on your web server will have a separate entry in apache configuration file.![Screenshot 2022-06-19 193936](https://user-images.githubusercontent.com/81466207/174567656-0c33a2be-d692-4522-a7fb-c50663bac16f.jpg)
-![Screenshot 2022-06-19 193936](https://user-images.githubusercontent.com/81466207/174567677-6dabf773-79f5-44b0-bdbc-4a778fcdf8b7.jpg)
