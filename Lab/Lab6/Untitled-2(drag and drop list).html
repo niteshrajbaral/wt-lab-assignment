@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="draggable" draggable="true">box1</div>
+    <div class="draggable" draggable="true">box2</div>
+    <div class="draggable" draggable="true">box3</div>
+    <div class="draggable" draggable="true">box4</div>
+    <style>
+        div{
+            height: 50px;
+            width: 300px;
+            border: 2px solid;
+            margin: 12px;
+            background-color: darkslategrey;
+            color: white;
+            text-align: center;
+            padding-top: 10px;
+        }
+    </style>
+    <script>
+var remove = document.querySelector('.draggable');
+ 
+function dragStart(e) {
+  this.style.opacity = '0.4';
+  dragSrcEl = this;
+  e.dataTransfer.effectAllowed = 'move';
+  e.dataTransfer.setData('text/html', this.innerHTML);
+};
+ 
+function dragEnter(e) {
+  this.classList.add('over');
+}
+ 
+function dragLeave(e) {
+  e.stopPropagation();
+  this.classList.remove('over');
+}
+ 
+function dragOver(e) {
+  e.preventDefault();
+  e.dataTransfer.dropEffect = 'move';
+  return false;
+}
+ 
+function dragDrop(e) {
+  if (dragSrcEl != this) {
+    dragSrcEl.innerHTML = this.innerHTML;
+    this.innerHTML = e.dataTransfer.getData('text/html');
+  }
+  return false;
+}
+ 
+function dragEnd(e) {
+  var listItens = document.querySelectorAll('.draggable');
+  [].forEach.call(listItens, function(item) {
+    item.classList.remove('over');
+  });
+  this.style.opacity = '1';
+}
+ 
+function addEventsDragAndDrop(el) {
+  el.addEventListener('dragstart', dragStart, false);
+  el.addEventListener('dragenter', dragEnter, false);
+  el.addEventListener('dragover', dragOver, false);
+  el.addEventListener('dragleave', dragLeave, false);
+  el.addEventListener('drop', dragDrop, false);
+  el.addEventListener('dragend', dragEnd, false);
+}
+ 
+var listItens = document.querySelectorAll('.draggable');
+[].forEach.call(listItens, function(item) {
+  addEventsDragAndDrop(item);
+});
+    </script>
+</body>
+</html>
